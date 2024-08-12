@@ -1,0 +1,1 @@
+0 6 * * * php /var/www/html/src/send_event.php

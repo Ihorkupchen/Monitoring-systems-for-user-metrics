@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    container_name: php-cli
+    working_dir: /var/www/html
+    environment:
+      - GA4_MEASUREMENT_ID=G-9W2BWM89DD
+      - GA4_API_SECRET=XgISncpATd-wwZhYbMmtFA
+    volumes:
+      - .:/var/www/html
+
+volumes:
+  app:
+    driver: local
